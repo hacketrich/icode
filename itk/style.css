@@ -1,0 +1,84 @@
+body{
+    justify-content: center;
+    display: flex;
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 80vh;
+    margin-top: 10%;
+   background-image: url(img/back.jpg);
+   background-size: cover;
+    border-radius: 40px;
+}
+
+.link{
+    float: none;
+    height: 55vh;
+    justify-content: center;
+    transform: translate(12%,12%);
+    display: flex;
+    background: rgba(66, 61, 61, 0.6);
+    width: 650px;
+    text-align: left;
+    float: left;
+    text-decoration: none;
+   
+}
+.help-system, .help-login, .help-developers{
+    transform: translate(15%,15%);
+    border-radius: 30px;
+    font-size: 25px;
+    width: 280px;
+    height: 30vh;
+    background: rgba(0, 0, 7, 0.4);
+    display: flex;
+    flex-direction: column;
+    margin: 50px 60px 0px -15px;
+   
+}
+h1{
+    color: rgb(163, 167, 170);
+    font-size: 18px;
+    text-align: center;
+
+}
+span{
+    margin: 0px 30px;
+    display: flex;
+    font-size: 15px;
+}
+span a{
+    margin-top: -1px;
+    text-decoration: none;
+    cursor: pointer;
+    color: skyblue;
+}
+.helpt{
+    margin-top: 24px;
+}
+#help{
+    margin: 0px 120px;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(238, 245, 248);
+}
+#helpb{
+    margin-top: 30%;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(238, 245, 248);
+}
+#pback{
+    margin-top: 55%;
+    margin-left: 88%;
+}
+.center{
+    font-size: 30px;
+}
+.head{
+    margin-left: 50% ;
+   text-decoration: none;
+    color: aliceblue;
+}

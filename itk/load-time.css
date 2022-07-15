@@ -1,0 +1,70 @@
+body{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 80vh;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+   background-image: url(img/back.jpg);
+   background-size: cover;
+    border-radius: 40px;
+}
+/* load-time page*/
+.wrap{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(23, 34, 23, 0.8);
+}
+form{
+    margin-top: 5%;
+    padding: 30px 20px 40px 20px;
+    margin-left: 20%;
+    background: rgba(23, 34, 23, 0.8);
+    position: absolute;
+    display: flex;
+    flex-direction: column  ;
+}
+form select{
+    background: rgb(36, 16, 105);
+    font-size: 20px;
+}
+form select option{
+    font-weight: bold;
+    font-family: serif;
+    color: skyblue;
+}
+form input{
+    background: rgb(36, 16, 105);
+    border: none;
+    width: 300px;
+    font-size: 20px;
+    border: 1px solid gray;
+    margin: 20px 0px;
+}
+/* introduction page*/
+.why-us{
+    margin: 50px 0px;
+    padding: 30px 20px 40px 20px;
+    margin-left: 15%;
+    background: rgba(23, 34, 23, 0.8);
+    position: absolute;
+    display: flex;
+    flex-direction: column  ;
+}
+.why-us h1, h2{
+    color: aliceblue;
+}
+.why-us ul li{
+    color: skyblue;
+}
+.why-us a{
+    text-decoration: none;
+    color: aliceblue;
+}
