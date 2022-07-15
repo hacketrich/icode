@@ -1,0 +1,60 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Log in</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="website.css">
+</head>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<10){  
+  alert("Password must be at least 10 characters long.");  
+  return false;  
+  }  
+}  
+</script>  
+<body>
+<div class=backlogin>
+<div class="content-login">
+<h1>Welcome to e-learning platform</h1>
+<p> 
+  Please identify yourself by logging in
+  <img src="img/images.png" class="loginpic">
+</p>
+</div>
+
+
+
+<div class="center">
+<h1>Login</h1>
+<form method="post" name="myform">
+ <div class="txt_field">
+<input type="text" id="UserName" name="UserName" required>
+<span></span>
+<label>Email</label>
+</div>
+<div class="txt_field">
+<input type="password" id="Password" name="Password" required  >
+<span></span>
+<label>Password</label>
+</div>
+<div class="pass">
+  <a href="forgetpassword.html">
+    Forgot password?
+    </a>
+</div>
+<button type="submit" class="kohereza" onsubmit="validateform();"><a href="thunderexam-platform.html">Login</a></button>
+<div class="signup">
+Not a member &nbsp&nbsp <a href="sign up categ.html">Sign up</a>
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>

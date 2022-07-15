@@ -1,0 +1,55 @@
+<DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body><label for="dog-names">Choose a dog name:</label>
+<select name="dog-names" id="dog-names"></select>
+<option value="rigatoni">Rigatoni</option>
+<option value="dave">Dave</option>
+<option value="pumpernickel">Pumpernickel</option>
+<option value="reeses">Reeses</option>
+
+<div class="dropdown">
+</div>
+<div class="dropdown">
+<button>HubSpot Resources</button>
+</div>
+
+<div class="dropdown-content">
+<a href="https://blog.hubspot.com/">Blog</a>
+<a href="https://academy.hubspot.com/">Academy</a>
+<a href="https://www.youtube.com/user/hubspot">YouTube</a>
+</div>
+<style>
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+width: 100%;
+overflow: auto;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.dropdown-content a {
+display: block;
+color: #000000;
+padding: 5px;
+text-decoration: none;
+}
+
+.dropdown-content a:hover {
+color: #FFFFFF;
+background-color: #00A4BD;
+}
+
+</style>
+</body>
+</html>

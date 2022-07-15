@@ -1,0 +1,46 @@
+<!doctype>
+	<html>
+	<head> <title>popo</title>
+
+<link rel="stylesheet" href="popup.css">
+	</head>
+	<body>
+<div class="popup" id="popup-1">
+	<div class="overlay"></div>
+	<div class="content">
+		<div class="close-btn"onclick="togglePopup()">&times</div>
+		<h1>Title</h1>
+		<p>yavhjcsehjb scdhjbeshdj  hjds hj sdjh shjd sjdh sjh czdhj cdsjh csdjh cdsjh csdjh cdshjn ckjNDkjb jch jhsv</p>
+	</div>
+</div>
+<button onclick="togglePopup()">show popup</button>
+<script>
+	function togglePopup(){
+
+		document.getElementById("popup-1").classlist.toggle("active");
+	}
+
+</script>-->
+
+<button id="open">
+	click
+</button>
+<div class="modal-container"
+ id="modal-container">
+	<h1>Modal are here</h1>
+	<p>
+		the main body of 
+		a book or other piece of writing, as distinct from other material such as notes, appendices, and illustrations.
+       the pictures are 
+        clear and relate well to the text"
+	</p>
+	<button id="close">close</button>
+</div>
+<script>
+	const open = document.getElementById('open');	
+	const modal-container = document.getElementById('modal-container');
+	const close = document.getElementById('close')
+</script>
+
+</body>
+</html>

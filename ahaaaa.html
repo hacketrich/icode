@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link rel="stylesheet" href="popup.css">
+   
+</head>
+<body>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times</div>
+        
+        <h1>Title</h1>
+        <p>Usually teacher get disturbed by preparing the exams on papers<br>
+            and arranging the questions, this e assements is helpfull just because it <br>
+            making it easy to test that students got the lesson.</p>
+    </div>
+</div>
+<input type="button" value="Show"  onclick="togglePopup()" >
+<script>
+    function togglePopup() {
+        document.getElementById("popup-1").classList.toggle("active");
+        
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<title>Preparations </title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="teacher.css">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+
+  </script><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<div class="container-tab">
+	<div class="main-title">
+		<div class="content">
+			<div class="list">
+<menu class="toolbar">
+<ul>
+
+
+				<label for="" class="home-tabs">
+					<i class="fas fa-envelope"></i>
+					<span class="topic-mini"><a href="teacher.html">Home</a></span>
+				</label>
+				<label for="" class="help">
+					<i class="fas fa-envelope"></i>
+					<span class="topic-mini"><a href="#">Meetings</a></span>
+				</label>
+
+				<label for="" class="code">
+					<i class="fas fa-code"></i>
+					<span class="topic-mini"><a href="library.html">Library</a></span>
+				</label>
+				<label for="" class="coe">
+					<i class="fas fa-code"></i>
+					<span class="topic-mini"><a href="assement.html">Assessments</a></span>
+				</label>
+				<label for="" class="abot">
+					<i class="fas fa-user"></i>
+				   <span class="topic-mini"><a href="examination.html">Examinations</a></span>
+				</label>
+				<label for="" class="abot">
+					<i class="fas fa-user"></i>
+				  <span class="topic-mini"><a href="faQ.html">About</a></span>
+				</label>
+</ul>
+</menu>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class=header> 
+</div>
+<div class="container-tools">
+  <div class="main-title-tools">
+	  <div class="indicator">
+ <input type="radio" name="indicator" id="Exercise">
+<input type="radio" name="indicator" id="Quiz">
+<input type="radio" name="indicator" id="Test">
+<input type="radio" name="indicator" id="Homework">
+<input type="radio" name="indicator" id="Exam">
+<input type="radio" name="indicator" id="Prove">
+</div>
+    <div class="welcome-tools">
+     <label for="Exercise">
+ <i class="fas fas"></i>
+ <a href="exerciseplan.html"><span class="topic">Exercise</span></a></label>
+<label for="Quiz">
+  <i class="fas fas"></i>
+  <a href="quizplan.html"><span class="topic">Quiz</span></label></a>
+ <label for="Test">
+  <i class="fas fas"></i>
+  <a href="testplan.html"><span class="topic">Test</span></label></a>
+ <label for="Homework">
+  <i class="fas fas"></i>
+  <a href="homeworkplan.html"><span class="topic">Homework</span></a></label>
+ <label for="Exam">
+  <i class="fas fas"></i>
+  <a href="examplan.html"><span class="topic" onclick="Myexam()">Exam</span></a></label>
+ <label for="Prove">
+  <i class="fas fas"></i>
+  <a href="proveplan.html"><span class="topic">Prove</span></a></label>
+<div class="indicator"></div>
+</div>
+</div>
+</div>
+<!--<div class="upoad_file">
+  <form action="/action_page.php">
+    <input type="file" id="myFile" name="filename">
+    <input type="submit">
+  </form>
+  <script>
+  updateList = function() {
+    var input = document. getElementById('file');
+    var output = document. getElementById('fileList');
+    ​
+    output. innerHTML = '<ul>';
+    for (var i = 0; i < input. files. length; ++i) {
+    output. innerHTML += '<li>' + input. files. item(i). name + '</li>';
+    }
+  </script>
+</div>
+
+<button> <a href="">PREPARATION ROOM</a></button>-->
+
+<!--<div class="getmeintoaction">
+  
+ 
+</div>
+
+
+<div class="login-form">
+  <form action="/examples/actions/confirmation.php" method="post">
+      <h2 class="text-center">Log in</h2>       
+      <div class="form-group">
+          <input type="text" class="form-control" placeholder="Username" required="required">
+      </div>
+      <div class="form-group">
+          <input type="password" class="form-control" placeholder="Password" required="required">
+      </div>
+      <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block">Log in</button>
+      </div>
+      <div class="clearfix">
+          <label class="float-left form-check-label"><input type="checkbox"> Remember me</label>
+          <a href="#" class="float-right">Forgot Password?</a>
+      </div>        
+  </form>
+  <script>
+    function Myexam(){
+      document.getElementsByClassName('login-form');
+    }
+  </script>
+</div>-->
+
+<!--<div id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+  <p>Drag one or more files to this Drop Zone ...</p>
+</div>-->
+<!--<script>
+
+function dropHandler(ev) {
+  console.log('File(s) dropped');
+
+  // Prevent default behavior (Prevent file from being opened)
+  ev.preventDefault();
+
+  if (ev.dataTransfer.items) {
+    // Use DataTransferItemList interface to access the file(s)
+    for (var i = 0; i < ev.dataTransfer.items.length; i++) {
+      // If dropped items aren't files, reject them
+      if (ev.dataTransfer.items[i].kind === 'file') {
+        var file = ev.dataTransfer.items[i].getAsFile();
+        console.log('... file[' + i + '].name = ' + file.name);
+      }
+    }
+  } else {
+    // Use DataTransfer interface to access the file(s)
+    for (var i = 0; i < ev.dataTransfer.files.length; i++) {
+      console.log('... file[' + i + '].name = ' + ev.dataTransfer.files[i].name);
+    }
+  }
+}
+return 'FormData' in window;
+'FileReader' in window
+var isAdvancedUpload = function() {
+  var div = document.createElement('div');
+  return (('draggable' in div) || ('ondragstart' in div && 'ondrop' in div)) && 'FormData' in window && 'FileReader' in window;
+}();
+if (isAdvancedUpload) {
+  // ...
+}
+var $form = $('.box');
+
+if (isAdvancedUpload) {
+  $form.addClass('has-advanced-upload');
+}
+-->
+
+<style id="" media="all">/* cyrillic-ext */
+</style>
+<style>
+
+	</style>
+
+<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+</head>
+<body>
+	<div class="text">
+		<label for="Exercise">
+			<span>Exercise</span>
+		</label>
+		<label for="Quiz">
+			<span>Quiz</span>
+		</label>
+		<label for="Test">
+			<span>Test</span>
+		</label>
+		<label for="Homework">
+			<span>Homework</span>
+		</label>
+		<label for="Exam">
+			<span>Exam</span>
+		</label>
+		<label for="Prove">
+			<span>Prove</span>
+		</label>
+	</div>
+<div class="container" role="main">
+<h1><a href="/article-url"></a></h1>
+<nav role="navigation">
+<a href="#" class="is-selected">Upload the exam</a>
+
+</nav>
+<form method="post" action="https://css-tricks.com/examples/DragAndDropFileUploading//?" enctype="multipart/form-data" novalidate class="box">
+<div class="box__input">
+<svg class="box__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="43" viewBox="0 0 50 43"><path d="M48.4 26.5c-.9 0-1.7.7-1.7 1.7v11.6h-43.3v-11.6c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v13.2c0 .9.7 1.7 1.7 1.7h46.7c.9 0 1.7-.7 1.7-1.7v-13.2c0-1-.7-1.7-1.7-1.7zm-24.5 6.1c.3.3.8.5 1.2.5.4 0 .9-.2 1.2-.5l10-11.6c.7-.7.7-1.7 0-2.4s-1.7-.7-2.4 0l-7.1 8.3v-25.3c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v25.3l-7.1-8.3c-.7-.7-1.7-.7-2.4 0s-.7 1.7 0 2.4l10 11.6z" /></svg>
+<input type="file" name="files[]" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple />
+<label for="file"><strong>Choose a file</strong><span class="box__dragndrop"> or drag it here</span>.</label>
+<button type="submit" class="box__button">Upload</button>
+</div>
+<div class="box__uploading">Uploading&hellip;</div>
+<div class="box__success">Done! <a href="https://css-tricks.com/examples/DragAndDropFileUploading//?" class="box__restart" role="button">Upload more?</a></div>
+<div class="box__error">Error! <span></span>. <a href="https://css-tricks.com/examples/DragAndDropFileUploading//?" class="box__restart" role="button">Try again!</a></div>
+</form>
+
+
+
+<script>
+
+	'use strict';
+
+	;( function ( document, window, index )
+	{
+		// feature detection for drag&drop upload
+		var isAdvancedUpload = function()
+			{
+				var div = document.createElement( 'div' );
+				return ( ( 'draggable' in div ) || ( 'ondragstart' in div && 'ondrop' in div ) ) && 'FormData' in window && 'FileReader' in window;
+			}();
+
+
+		// applying the effect for every form
+		var forms = document.querySelectorAll( '.box' );
+		Array.prototype.forEach.call( forms, function( form )
+		{
+			var input		 = form.querySelector( 'input[type="file"]' ),
+				label		 = form.querySelector( 'label' ),
+				errorMsg	 = form.querySelector( '.box__error span' ),
+				restart		 = form.querySelectorAll( '.box__restart' ),
+				droppedFiles = false,
+				showFiles	 = function( files )
+				{
+					label.textContent = files.length > 1 ? ( input.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', files.length ) : files[ 0 ].name;
+				},
+				triggerFormSubmit = function()
+				{
+					var event = document.createEvent( 'HTMLEvents' );
+					event.initEvent( 'submit', true, false );
+					form.dispatchEvent( event );
+				};
+
+			// letting the server side to know we are going to make an Ajax request
+			var ajaxFlag = document.createElement( 'input' );
+			ajaxFlag.setAttribute( 'type', 'hidden' );
+			ajaxFlag.setAttribute( 'name', 'ajax' );
+			ajaxFlag.setAttribute( 'value', 1 );
+			form.appendChild( ajaxFlag );
+
+			// automatically submit the form on file select
+			input.addEventListener( 'change', function( e )
+			{
+				showFiles( e.target.files );
+
+				
+				triggerFormSubmit();
+
+				
+			});
+
+			// drag&drop files if the feature is available
+			if( isAdvancedUpload )
+			{
+				form.classList.add( 'has-advanced-upload' ); // letting the CSS part to know drag&drop is supported by the browser
+
+				[ 'drag', 'dragstart', 'dragend', 'dragover', 'dragenter', 'dragleave', 'drop' ].forEach( function( event )
+				{
+					form.addEventListener( event, function( e )
+					{
+						// preventing the unwanted behaviours
+						e.preventDefault();
+						e.stopPropagation();
+					});
+				});
+				[ 'dragover', 'dragenter' ].forEach( function( event )
+				{
+					form.addEventListener( event, function()
+					{
+						form.classList.add( 'is-dragover' );
+					});
+				});
+				[ 'dragleave', 'dragend', 'drop' ].forEach( function( event )
+				{
+					form.addEventListener( event, function()
+					{
+						form.classList.remove( 'is-dragover' );
+					});
+				});
+				form.addEventListener( 'drop', function( e )
+				{
+					droppedFiles = e.dataTransfer.files; // the files that were dropped
+					showFiles( droppedFiles );
+
+					
+					triggerFormSubmit();
+
+									});
+			}
+
+
+			// if the form was submitted
+			form.addEventListener( 'submit', function( e )
+			{
+				// preventing the duplicate submissions if the current one is in progress
+				if( form.classList.contains( 'is-uploading' ) ) return false;
+
+				form.classList.add( 'is-uploading' );
+				form.classList.remove( 'is-error' );
+
+				if( isAdvancedUpload ) // ajax file upload for modern browsers
+				{
+					e.preventDefault();
+
+					// gathering the form data
+					var ajaxData = new FormData( form );
+					if( droppedFiles )
+					{
+						Array.prototype.forEach.call( droppedFiles, function( file )
+						{
+							ajaxData.append( input.getAttribute( 'name' ), file );
+						});
+					}
+
+					// ajax request
+					var ajax = new XMLHttpRequest();
+					ajax.open( form.getAttribute( 'method' ), form.getAttribute( 'action' ), true );
+
+					ajax.onload = function()
+					{
+						form.classList.remove( 'is-uploading' );
+						if( ajax.status >= 200 && ajax.status < 400 )
+						{
+							var data = JSON.parse( ajax.responseText );
+							form.classList.add( data.success == true ? 'is-success' : 'is-error' );
+							if( !data.success ) errorMsg.textContent = data.error;
+						}
+						else alert( 'Error. Please, contact the webmaster!' );
+					};
+
+					ajax.onerror = function()
+					{
+						form.classList.remove( 'is-uploading' );
+						alert( 'Error. Please, try again!' );
+					};
+
+					ajax.send( ajaxData );
+				}
+				else // fallback Ajax solution upload for older browsers
+				{
+					var iframeName	= 'uploadiframe' + new Date().getTime(),
+						iframe		= document.createElement( 'iframe' );
+
+						$iframe		= $( '<iframe name="' + iframeName + '" style="display: none;"></iframe>' );
+
+					iframe.setAttribute( 'name', iframeName );
+					iframe.style.display = 'none';
+
+					document.body.appendChild( iframe );
+					form.setAttribute( 'target', iframeName );
+
+					iframe.addEventListener( 'load', function()
+					{
+						var data = JSON.parse( iframe.contentDocument.body.innerHTML );
+						form.classList.remove( 'is-uploading' )
+						form.classList.add( data.success == true ? 'is-success' : 'is-error' )
+						form.removeAttribute( 'target' );
+						if( !data.success ) errorMsg.textContent = data.error;
+						iframe.parentNode.removeChild( iframe );
+					});
+				}
+			});
+
+
+			// restart the form if has a state of error/success
+			Array.prototype.forEach.call( restart, function( entry )
+			{
+				entry.addEventListener( 'click', function( e )
+				{
+					e.preventDefault();
+					form.classList.remove( 'is-error', 'is-success' );
+					input.click();
+				});
+			});
+
+			// Firefox focus bug fix for file input
+			input.addEventListener( 'focus', function(){ input.classList.add( 'has-focus' ); });
+			input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
+
+		});
+	}( document, window, 0 ));
+
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6d83c695fb25dae8","token":"2863ac31b15c48f5b94bd8b0c38aba94","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+<div id="display_image"></div>
+<script>
+	const image_input = document.querySelector('#file_input');
+	var upload_image = "";
+
+	image_input.addEventListener("change"){
+		const reader = FileReader();
+	}	reader.addEventListener("laod", () =>{
+			uploaded_image = reader.result;
+			document.querySelector("#display_image").style.backgroundimage = 
+		});
+		reader.readAsDataURL(this.files[0]);
+	})
+</script>
+
+</body>
+
+</html>
+
+
+

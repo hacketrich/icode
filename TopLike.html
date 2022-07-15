@@ -1,0 +1,133 @@
+<DOCTYPE html>
+<html>
+<head><title>toplike</title>
+<script>
+var i,type,x,y,p;
+function Ssquare() 
+{
+ type=document.main.txtvalue.value;
+ car=document.main.pxpvalue.value;
+ volvo=document.main.vxvvalue.value;
+ i=Math.sqrt(car*car-4*type*volvo);
+ x=(i-car)/(2*type);
+ y=(-i-car)/(2*type);
+ p=Math.cos(type);
+document.main.result.value=y;
+document.main.display.value=x;
+document.main.katerina.value=x;
+
+}
+function show_confirm()
+{
+var r=confirm("Press a button");
+if (r==true)
+ {
+ alert("You pressed OK!");
+ }
+else
+ {
+ alert("You pressed Cancel!");
+ }
+}
+var type;
+function displayfile(){
+type=document.displaydocum.myfile.value;
+document.displayz.value=type;
+}
+
+</script>
+</head>
+<body>
+  <input type="button" onclick="show_confirm()" value="Show confirmbox" /> 
+<form name="main">
+<input type="number" name="txtvalue" value="1"><br><br>
+<input type="number" name="pxpvalue" value="7"><br><br>
+<input type="number" name="vxvvalue" value="5"><br><br>
+<input type=button value="show square" onclick="Ssquare();">
+root1:<input name="result">
+root2:<input name="display">
+<input name="katerina">
+</form>
+<form action="" method="post" name="displaydocum">
+  <input type="file" name="myfile" id="myfile">
+  <input type="submit" name="result" onclick="displayfile()">
+ <form action="" method="post" name="displayz" class="display">
+
+ </form>
+<style>
+  .display{
+    background: azure;
+    border: 9px;
+    width: 70%;
+    height: 80vh;
+    text-align:center;
+  }
+</style>
+
+
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<label for="help">
+ <i class="fas fa-envelope"></i> 
+<!--<span class="topic"><!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 22, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script></script>--></span>
+<div class="slap">
+<form name="vemo">
+<input type="text" name="display" class=display size=8>
+<br><br>
+<input type="button" value="9" onclick="cal.display.value+='9'" class=num>
+<input type="button" value="8" onclick="cal.display.value+='8'" class=num>
+<input type="button" value="7" onclick="cal.display.value+='7'" class=num>
+<input type="button" value="+" onclick="cal.display.value+='+'" class=num>
+<br><br>
+<input type="button" value="6" onclick="cal.display.value+='6'" class=num>
+<input type="button" value="5" onclick="cal.display.value+='5'" class=num>
+<input type="button" value="4" onclick="cal.display.value+='4'" class=num>
+<input type="button" value="-" onclick="cal.display.value+='-'" class=num>
+<br><br>
+<input type="button" value="3" onclick="cal.display.value+='3'"  class=num>
+<input type="button" value="2" onclick="cal.display.value+='2'" class=num>
+<input type="button" value="1" onclick="cal.display.value+='1'" class=num>
+<input type="button" value="*" onclick="cal.display.value+='*'" class=num>
+<br><br>
+<input type="button" value="0" onclick="cal.display.value+='0'" class=num>
+<input type="button" value="%" onclick="cal.display.value+='%'" class=num>
+<input type="button" value="/" onclick="cal.display.value+='/'" class=num>
+<input type="button" value="=" onclick="cal.display.value=eval(cal.display.value)" class=num>
+<br><br>
+<input type="button" value="DELETE" onclick="cal.display.value= ''" id="del">
+</form>
+</div>
+</body>
+</html>

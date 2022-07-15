@@ -1,0 +1,377 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>ThunderExam </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Apr 18, 2022 00:00:00").getTime();
+  
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+  
+    // Get today's date and time
+    var now = new Date().getTime();
+  
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+  
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+    // Display the result in the element with id="demo"
+    document.getElementById("demo").innerHTML ="Time left:      " + hours + ":"
+    + minutes + ":" + seconds + " ";
+  
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "Exam ended";
+    }
+  }, 1000);
+  //sqaure roots
+  
+  </script>
+<link rel="stylesheet" href="exams.css">
+</head>
+
+<body>
+
+<div class="intro">
+  <div class="inform">
+  <form action="" method="get">
+   Name: <input type="text" name="Fname" id="Fname">
+   Class: <input type="text" name="Cname" id="Cname">
+   Date: <input type="date" name="Dtime" id="Dtime">
+   Subject: <input type="text" name="Subj" id="Subj">
+  </form>
+</div>
+<div class="time">
+  <p id="demo"></p>
+</div>
+<div class="clue">
+  <h1>WORKSHEET</h1>
+  <textarea name="Answer" id="Answer" cols="70" rows="30" placeholder="Answers"></textarea>
+  
+
+</div>
+<div class="instrum">
+  <h1>INSTRUMENTS</h1>
+  <label for="tabs-tools">
+    <i class="fas fa-home"></i>
+    <div class="dropdown">
+      <button id="btn">Calculator</button>
+      <div class="dropdown-content">
+        <div class="wrap">
+          <form name="cal">
+          <input type="text" name="display" class=display size=8>
+          <br><br>
+          <input type="button" value="9" onclick="cal.display.value+='9'" class=num>
+          <input type="button" value="8" onclick="cal.display.value+='8'" class=num>
+          <input type="button" value="7" onclick="cal.display.value+='7'" class=num>
+          <input type="button" value="+" onclick="cal.display.value+='+'" class=num>
+          <br><br>
+          <input type="button" value="6" onclick="cal.display.value+='6'" class=num>
+          <input type="button" value="5" onclick="cal.display.value+='5'" class=num>
+          <input type="button" value="4" onclick="cal.display.value+='4'" class=num>
+          <input type="button" value="-" onclick="cal.display.value+='-'" class=num>
+          <br><br>
+          <input type="button" value="3" onclick="cal.display.value+='3'"  class=num>
+          <input type="button" value="2" onclick="cal.display.value+='2'" class=num>
+          <input type="button" value="1" onclick="cal.display.value+='1'" class=num>
+          <input type="button" value="*" onclick="cal.display.value+='*'" class=num>
+          <br><br>
+          <input type="button" value="0" onclick="cal.display.value+='0'" class=num>
+          <input type="button" value="%" onclick="cal.display.value+='%'" class=num>
+          <input type="button" value="/" onclick="cal.display.value+='/'" class=num>
+          <input type="button" value="=" onclick="cal.display.value=eval(cal.display.value)" class=num>
+          <br><br>
+          <input type="button" value="DELETE" onclick="cal.display.value= ''" id="del">
+          </form>
+         
+          </div>
+      </div>
+    </div> 
+   </label>
+   <label for="tabs-tools">
+    <i class="fas fa-home"></i> 
+    <div class="dropdown">
+      <button id="btn">Sqrt</button>
+      <div class="dropdown-content">
+        <div class="wrap"> 
+          <form action="" name="main"class="main">
+          <input type="number" name="txtvalue" id="txtroot" placeholder="Enter the number here">
+          <input type="button" onclick="Square()" value="SHOW RESULT" id="smallbtn" >
+          <input name="displayx" placeholder="Result">
+          
+        </form>
+        </div>
+      </div>
+    </div>
+    <script>
+var i,type;
+function Square()
+  {
+ type=document.main.txtvalue.value;
+ i=Math.sqrt(type);
+document.main.displayx.value=i;
+}
+var a,mind;
+function Dlog(){
+  mind=document.make.prtye.value;
+ a=Math.log(mind);
+document.make.result.value=a;
+}
+var b,minds;
+function Ccos(){
+  minds=document.makes.prtyes.value;
+ b=Math.cos(minds);
+document.makes.results.value=b;
+}
+var c,mindf;
+function Ssin(){
+  mindf=document.makef.prtyef.value;
+ c=Math.sin(mindf);
+document.makef.resultf.value=c;
+}var d,mindg;
+function Ttan(){
+  mindg=document.makeg.prtyeg.value;
+ d=Math.tan(mind);
+document.makeg.resultg.value=d;
+}
+    </script>
+   
+   </label>
+   <label for="tabs-tools">
+    <i class="fas fa-home"></i> 
+    <div class="dropdown">
+      <button id="btn">Log</button>
+      <div class="dropdown-content">
+        <div class="wrap">
+          <form action="" name="make" class="vmmmm">
+            <input type="number" name="prtye" placeholder="Enter the number">
+             <input type="button" onclick="Dlog()" value="SHOW RESULT" id="smallbtn" >
+           <input name="result" placeholder="Result">
+          </form>
+        </div>
+      </div>
+    </div> 
+   </label>
+   <label for="tabs-tools">
+    <i class="fas fa-home"></i> 
+    <div class="dropdown">
+      <button id="btn">cos</button>
+      <div class="dropdown-content">
+        <div class="wrap">
+          <form action="" name="makes">
+            <input type="number" name="prtyes" placeholder="Enter the number">
+             <input type="button" onclick="Ccos()" value="SHOW RESULT" id="smallbtn" >
+           <input name="results" placeholder="Result">
+          </form>
+        </div>
+      </div>
+    </div> 
+   </label>
+   <label for="tabs-tools">
+    <i class="fas fa-home"></i> 
+    <div class="dropdown">
+      <button id="btn">sin</button>
+      <div class="dropdown-content">
+        <div class="wrap">
+          <form action="" name="makef">
+            <input type="number" name="prtyef" placeholder="Enter the number">
+             <input type="button" onclick="Ssin()" value="SHOW RESULT" id="smallbtn" >
+           <input name="resultf" placeholder="Result">
+          </form>
+        </div>
+      </div>
+    </div> 
+   </label>
+   <label for="tabs-tools">
+    <i class="fas fa-home"></i> 
+    <div class="dropdown">
+      <button id="btn">tan</button>
+      <div class="dropdown-content">
+        <div class="wrap">
+          <form action="" name="makeg">
+            <input type="number" name="prtyeg" placeholder="Enter the number">
+             <input type="button" onclick="Ttan()" value="SHOW RESULT" id="smallbtn" >
+           <input name="resultg" placeholder="Result">
+          </form>
+        </div>
+      </div>
+    </div> 
+   </label>
+   
+    </div>
+<style>
+  .instrum .vmmmm{
+    width: 30%;
+    height:30vh;
+  }
+  .dropdownz {
+  position: relative;
+  display: inline-block;
+}
+  #num{
+    color: red;
+  }
+  .display{
+    height: 45px;
+  }
+  #smallbtn{
+    height: 10px;
+    background: skyblue;
+  }
+  .main{
+    border-radius: 20px;
+    height: 10vh;
+  }
+  button{
+
+    background: azure;
+    position: relative;
+border-radius:20px;
+font-size: 20px;
+border: none;
+color: blue;
+padding: 20px;
+border-bottom:3px solid skyblue;
+  }
+  #btn{
+    cursor: pointer;
+    width: 80%;
+    margin: 7px 8px;
+    font-size: 20px;
+    background: tomato;
+  }
+  h1{
+    background: grey;
+    font-size: 25px;
+  }
+  .instrum{
+    width: 54%;
+    background: teal;
+    height: 140vh;
+    border: 12px;
+    margin-left: 72%;
+    margin-top: -59.8%;
+  }
+  textarea{
+    border: none;
+  }
+   #Answer{
+    font-size: 20px;
+    color: blue;
+  }
+  .time{
+    text-align: center;
+    width: 40%;
+  }
+  #demo{
+    font-size: 30px;
+    background: grey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  h1{
+    font-size: 25px;
+    text-align: center;
+    background: turquoise;
+  }
+  .clue{
+    width: 70%;
+    height: 100vh;
+    margin: 20px 20px;
+    background: white;
+  }
+  #Cname{
+  width: 100px;
+  height: 4vh;
+  }
+  #fname{
+  height: 4vh;
+  }
+  #Subj{
+  height: 4vh;
+  }
+  #Dtime{
+    text-align: right;
+  height: 4vh;
+  }
+
+</style>
+
+
+
+ <!--<div class="display">
+<h1>ASSESSMENT</h1> 
+<hr>
+<div class="doexam">
+  <h1>WORKSHEET</h1> 
+  <hr>
+  </div>
+</div>
+
+<!-- <section>
+ <!-- <div class="contents-tabs">
+    <a href="teacher.html">Teacher's guide</a>
+
+    <a href="library.html">Library</a>
+
+    <a href="assement.html">Assessments</a>
+
+   <a href="examination.html">Examinations</a>
+</div>-->
+  <!--
+<div class=clock>
+</script></span>
+</div>
+<!--
+<form action="Login" method="get">
+  <h1>Fill the information</h1>
+  <input type="text" name="Firstname" id="FirstName"placeholder="Enter the first name">
+  <input type="text" name="Lastname" id="LastName"placeholder="Enter the last name">
+  <input type="text" name="Classn" id="Class"placeholder="Enter the class name">
+  <input type="text" name="Examname" id="ExamName"placeholder="Enter the nameof exam">
+  <input type="date" name="date" id="DOB" placeholder="Date" inputmode="date">
+</form>
+
+
+
+<div class="answersheet"><div class="get_paper">
+  <div class="display-contents"></div></div>
+<div class=myshe><h1 class="topic-tools-worksheet">&nbsp Work sheet</h1></div>
+<a href="" class=qn>Qn.</a> <input id=demoInput type=number min=1 max=100 value=1>
+<textarea cols="80" rows="18" class="answerbox" placeholder="Answer:">
+Answer:
+</textarea>
+
+
+<div><button onclick="increment()" class="topic-tools-button-ab" >next</button></div>
+<div><button onclick="decrement()" class="topic-tools-button-abc">Previous</button></div>
+<script>
+   function increment() {
+      document.getElementById('demoInput').stepUp();
+   }
+   function decrement() {
+      document.getElementById('demoInput').stepDown();
+   }
+</script>
+</div>-->
+<!--<div class="draftpaper">
+<h1 class="draftheading">Daft paper</h1><br><br><br>
+<textarea cols="35" rows="14" class="answerbox-draft" placeholder="My draft">
+</textarea>
+<input type="reset" value="Clear" id=reset onclick="">
+</div>-- >
+</section>
+</body>
+</html>

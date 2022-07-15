@@ -1,0 +1,160 @@
+<h1 class="topic-tools-worksheet">TOOLS</h1>
+<div class="container-tools">
+  <div class="main-title-tools">
+    <div class="welcome-tools">
+     <label for="tabs-tools">
+ <i class="fas fas"></i> 
+<div class="dropdown">
+  <span class="topic-tools">Calculator</span>
+<div class="dropdown-content">
+<div class="wrap">
+<form name="cal">
+<input type="text" name="display" class=display size=8>
+<br><br>
+<input type="button" value="9" onclick="cal.display.value+='9'" class=num>
+<input type="button" value="8" onclick="cal.display.value+='8'" class=num>
+<input type="button" value="7" onclick="cal.display.value+='7'" class=num>
+<input type="button" value="+" onclick="cal.display.value+='+'" class=num>
+<br><br>
+<input type="button" value="6" onclick="cal.display.value+='6'" class=num>
+<input type="button" value="5" onclick="cal.display.value+='5'" class=num>
+<input type="button" value="4" onclick="cal.display.value+='4'" class=num>
+<input type="button" value="-" onclick="cal.display.value+='-'" class=num>
+<br><br>
+<input type="button" value="3" onclick="cal.display.value+='3'"  class=num>
+<input type="button" value="2" onclick="cal.display.value+='2'" class=num>
+<input type="button" value="1" onclick="cal.display.value+='1'" class=num>
+<input type="button" value="*" onclick="cal.display.value+='*'" class=num>
+<br><br>
+<input type="button" value="0" onclick="cal.display.value+='0'" class=num>
+<input type="button" value="%" onclick="cal.display.value+='%'" class=num>
+<input type="button" value="/" onclick="cal.display.value+='/'" class=num>
+<input type="button" value="=" onclick="cal.display.value=eval(cal.display.value)" class=num>
+<br><br>
+<input type="button" value="DELETE" onclick="cal.display.value= ''" id="del">
+</form>
+</div>
+</div>
+</label>
+    <label for="tabs">
+ <i class="fas fa-blog"></i> 
+<span class="topic-tools">Lines</span>
+</label>
+  <label for="tabs">
+ <i class="fas fa-help"></i> 
+<span class="topic-tools">Graph paper</span>
+</label>
+ <label for="tabs">
+ <i class="fas fa-help"></i> 
+<div class="dropdown">
+<span class="topic-tools">Paint</span>
+<div class="dropdown-content">
+<div class=wrap><input type=color></div>
+</div>
+</div>
+</label>
+ <label for="tabs">
+ <i class="fas fa-help"></i> 
+<span class="topic-tools">Pencil</span>
+</label>
+ <label for="tabs">
+ <i class="fas fa-help"></i> 
+<span class="topic-tools">Draw</span>
+</label>
+ <label for="tabs">
+ <i class="fas fa-help"></i> 
+<span class="topic-tools">Table</span>
+</label>
+<label for="tabs">
+ <i class="fas fa-help"></i> 
+<span class="topic-tools">Text box</span>
+</label>
+<label for="tabs">
+ <i class="fas fa-help"></i> 
+<span class="topic-tools">Chart</span>
+</label> 
+ <!--<label for="tabs">
+ <i class="fas fa-help"></i> 
+<span class="topic-tools">Symbol</span>
+</label>-->
+<!--<div class="dropdown">
+  <button class="dropbtn" onclick="dropdown-content">Symbol</button>
+  <div class="dropdown-content">
+    <a href="#">&</a>
+    <a href="#">%</a>
+    <a href="#">*</a>
+    <a href="#">$</a>
+     <a href="#">^</a>
+     <a href="#">(</a>
+<a href="#">)</a>
+<a href="#">@</a>
+<a href="#">!</a>
+<a href="#">?</a>
+<a href="#"><</a>
+<a href="#">></a>
+<a href="#">"</a>
+<a href="#">;</a>
+<a href="#">.</a>
+<a href="#">/</a>
+</div>--></div><br><br><br>
+ <label for="tabs">
+ <i class="fas fa-help"></i> 
+<div class="dropdown">
+<span class="topic-tools">x<sup>2</sup></span>
+<div class="dropdown-content">
+<script>
+var i,type;
+function Ssquare() 
+{
+ type=document.main.txtvalue.value;
+ i=type*type;
+document.main.result.value=i;
+}
+function Sroot() 
+{
+ type=document.main.txtvalue.value;
+ i=Math.sqrt(type);
+document.main.result.value=i;
+}
+</script>
+<form name="main">
+<input type="number" name="txtvalue" value="5"><br><br>
+<input type=button value="show square" onclick="Ssquare();">
+<input name="result">
+</form>
+</div>
+</div>
+</label>
+ <label for="tabs">
+ <i class="fas fa-help"></i> 
+<span class="topic-tools">x<sub>2</sub></span>
+</label>
+
+ <label for="tabs">
+ <i class="fas fa-help"></i> 
+<span class="topic-tools">sin</span>
+</label>
+ <label for="tabs">
+ <i class="fas fa-help"></i> 
+<span class="topic-tools">cos</span>
+</label>
+ <label for="tabs">
+ <i class="fas fa-help"></i> 
+<span class="topic-tools">tan</span>
+</label>
+ <label for="tabs">
+ <i class="fas fa-help"></i> 
+<span class="topic-tools">log</span>
+</label>
+ <label for="tabs">
+ <i class="fas fa-help"></i> 
+<span class="topic-tools">ln</span>
+</label>
+ <label for="tabs">
+ <i class="fas fa-help"></i> 
+<span class="topic-tools">x<sup>y</sup></span>
+</label>
+</div>
+</div>
+</div>
+<div>

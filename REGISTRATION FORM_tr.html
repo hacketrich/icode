@@ -1,0 +1,74 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>register on exam platform</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="website.css">
+</head>
+<script>
+var i;
+function MyGender() {
+i=document.txt_field.gender.male;
+document.result.value=i;
+}
+</script>
+<body>
+<div class="content-login">
+<h1>Welcome to e-learning platform</h1>
+<p> Please register by filling <br>all required details clearly  <br>
+to in order to keep up your info <br>
+to help by categorising!<br>
+</p>
+</div>
+
+
+<div class="center form">
+<h1>REGISTRATION</h1>
+<form method="post">
+ <div class="txt_field">
+<input type="text" required>
+<span></span>
+<label>First name</label>
+</div>
+<div class="txt_field">
+<input type="text" required>
+<span></span>
+<label>Last name</label>
+</div>
+<div class="txt_field">
+<input type="email" required>
+<span></span>
+<label>Email</label>
+</div>
+<div class="txt_field">
+<input type="date"  required>
+<span></span>
+<label>Date of birth</label>
+</div>
+<div class="txt_field">
+<input type="number"  required>
+<span></span>
+<label>Phone</label>
+</div>
+<div class="txt_field">
+<input name="result" >
+<span></span>
+<label>Gender:<select name="gender"><option  required name="male"  onclick="MyGender();">Male</option><option name="male" required  onclick="MyGender();">Female</option></select></label>
+</div>
+
+<div class="txt_field">
+<input type="password" title="Password must be in form a-z and 0-9 only"required>
+<span></span>
+<label>Password</label>
+</div>
+<div class="pass">
+Forgot password?
+</div>
+<button type="submit"  class="kohereza"><a href="localhost1.html">Sign up</a></button>
+<div class="signup">
+Have account <a href="login_form.html">Login</a>
+</div>
+</form>
+</div>
+</body>
+</html>
